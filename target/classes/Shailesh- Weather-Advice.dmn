@@ -8,6 +8,9 @@
     </dmn:allowedValues>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_CF4F774B-66CF-40EB-8953-7DC7E717D746" name="weather" isCollection="false">
+    <dmn:itemComponent id="_D0C51731-F59B-4E86-BFAE-5C178CC495B9" name="location" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
     <dmn:itemComponent id="_05191287-B41B-4EB9-B25D-DACC2FA6AB99" name="temperature" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
@@ -52,12 +55,12 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_4A24F9FD-6427-408C-9487-5AB842BD6324">
-        <dmn:inputExpression typeRef="string">
+        <dmn:inputExpression id="_94E10512-714F-4700-B5A0-37630AE651F1" typeRef="string">
           <dmn:text>Weather.temperature</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_8BAD3952-6F80-4D8F-B204-83E6759C2E55">
-        <dmn:inputExpression typeRef="boolean">
+        <dmn:inputExpression id="_A28FF9E2-FD7C-4A30-865E-98A08F183A04" typeRef="boolean">
           <dmn:text>Weather.stormAlert</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
